@@ -1,0 +1,20 @@
+{
+  "name": "hex2imagebase64",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/somprasongd/hex-to-imagebase64.git"
+  },
+  "keywords": [],
+  "author": "Somprasong Damyos",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/somprasongd/hex-to-imagebase64/issues"
+  },
+  "homepage": "https://github.com/somprasongd/hex-to-imagebase64#readme"
+}
