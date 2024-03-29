@@ -7,7 +7,7 @@ const smc = require("./smc");
 const { initializeSMC } = require("../public");
 const cors = require("cors");
 
-require('dotenv').config()
+require("dotenv").config();
 
 const PORT = process.env.SMC_AGENT_PORT || 9898;
 
@@ -16,6 +16,7 @@ app.use((req, res, next) => {
     "Access-Control-Allow-Origin",
     `${process.env.CORS_ALLOW_ORIGIN}`
   );
+  console.log(process.env.CORS_ALLOW_ORIGIN, "process.env.CORS_ALLOW_ORIGIN");
   // Other CORS-related headers can be set here if needed
   next();
 });
@@ -23,6 +24,8 @@ app.use((req, res, next) => {
 app.use(
   cors({
     origin: `${process.env.CORS_ALLOW_ORIGIN}`,
+    credentials: true, //access-control-allow-credentials:true
+    optionSuccessStatus: 200,
   })
 );
 
