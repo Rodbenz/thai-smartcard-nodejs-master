@@ -21,6 +21,16 @@ const ALL_QUERY = [
 
 let query = [...ALL_QUERY];
 
+function getSex(prefix) {
+  if (prefix === 'นาย' || prefix === 'เด็กชาย') {
+    return 'ชาย';
+  } else if (prefix === 'นาง' || prefix === 'นางสาว') {
+    return 'หญิง';
+  } else {
+    return 'ไม่ทราบ';
+  }
+}
+
 module.exports.init = (io) => {
   const devices = new Devices();
 
@@ -80,7 +90,11 @@ module.exports.init = (io) => {
           };
         }
         // console.log("Received data", data);
-        createFileJS({...data, ...{status:"success"}})
+        if(data){
+          const setData = {...data, ...{sex: getSex(data.name.prefix)}}
+          console.log(setData);
+          createFileJS({...setData, status:"success"})
+        }
         io.emit("smc-data", {
           status: 200,
           description: "Success",
