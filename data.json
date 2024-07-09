@@ -1,4 +1,46 @@
 {
-  "status": "error_device",
-  "message": "ไม่พบอุปกรณ์สมาร์ทการ์ด"
+  "cid": "1620600114344",
+  "name": {
+    "prefix": "นาย",
+    "firstname": "เกริกฤทธิ์",
+    "middlename": "",
+    "lastname": "มีติ๊บ",
+    "fullname": "นายเกริกฤทธิ์ มีติ๊บ"
+  },
+  "nameEN": {
+    "prefix": "Mr.",
+    "firstname": "Kerkrit",
+    "middlename": "",
+    "lastname": "Meetib",
+    "fullname": "Mr.Kerkrit Meetib"
+  },
+  "dob": "1994-08-08",
+  "gender": "1",
+  "issuer": "ท้องถิ่นเทศบาลเมืองกำแพงเพชร/กำแพงเพชร",
+  "issueDate": "2017-03-31",
+  "expireDate": "2025-08-07",
+  "address": {
+    "houseNo": "82/6",
+    "moo": "7",
+    "street": "",
+    "subdistrict": "วังควง",
+    "district": "พรานกระต่าย",
+    "province": "กำแพงเพชร",
+    "full": " 82/6 หมู่ที่ 7 ตำบลวังควง อำเภอพรานกระต่าย จังหวัดกำแพงเพชร"
+  },
+  "photo": "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JbeQhZ0aI+o+Yf41cbWrFQf3rNgZO2Nm/kK4VWKng1LFczQuGjbaw7qcf5+lAHoYORkd6K5CLxHeqgBbd7lQaKYXObB9aR5VjHPJPamSSCMZPJI496qM+5snk/zoAdJI0jZPb8hTQfSgc/jQOen/AOqgQpAY88UmCvTmlJwaAcdKBksV3NHHsVzsPVeoNbWk+KJbOLyp085B0OcMvtmsAkHqP6UFSvT/ABxUuKZSbR6BZ+IbC8T/AF3lN3EnGKZceJdOgOPNaQ/7C5FcGJGHfg9qQ/Mck1HskPnZ0ms+KPtEfk2isitwzE8kViXWo3Fyioz4jUYEa8KPwqvtG38KMAdKpRSE5NjdufanDAHFBOQKTNWTccelTwXH8EhwOxqtnj604dee9AF/JB7807JB6mqcU5jIDHK/mRVgvn/PWkCJ8n1oqDeaKBlG5P74fQUzuPoKKKYhfShev4UUUgA9BR2oopgHpSmiigBD0oH3qKKAFHX8qWiigAP+NIOhoooAO4pR0oopAIehq1H/AKpaKKAQ8UUUUDP/2SAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg",
+  "nhso": {
+    "maininscl": "สิทธิประกันสุขภาพถ้วนหน้า",
+    "subinscl": "ช่วงอายุ 12-59 ปี",
+    "mainHospitalName": "พรานกระต่าย",
+    "subHospitalName": "บ้านลานทอง",
+    "paidType": "1",
+    "issueDate": "2010-02-15",
+    "expireDate": "2054-08-08",
+    "updateDate": "2013-07-01",
+    "changeHospitalAmount": "0"
+  },
+  "sex": "ชาย",
+  "status": "success",
+  "message": "ข้อมูลเรียบร้อย"
 }
