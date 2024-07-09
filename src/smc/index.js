@@ -93,7 +93,7 @@ module.exports.init = (io) => {
         if(data){
           const setData = {...data, ...{sex: getSex(data.name.prefix)}}
           console.log(setData);
-          createFileJS({...setData, status:"success"})
+          createFileJS({...setData, status:"success", message:"ข้อมูลเรียบร้อย"})
         }
         io.emit("smc-data", {
           status: 200,
@@ -117,7 +117,7 @@ module.exports.init = (io) => {
     device.on("card-removed", (event) => {
       const message = `Card removed from '${event.name}'`;
       console.log(message);
-      createFileJS({...{}, ...{status:"error"}})
+      createFileJS({status:"error", message:"กรุณาเสียบบัตรประชาชน"})
       io.emit("smc-removed", {
         status: 205,
         description: "Card Removed",
@@ -130,7 +130,7 @@ module.exports.init = (io) => {
     device.on("error", (event) => {
       const message = `Incorrect card input'`;
       console.log(message);
-      createFileJS({...{}, ...{status:"error"}})
+      createFileJS({status:"error",message: 'การป้อนข้อมูลบัตรไม่ถูกต้อง'})
       io.emit("smc-incorrect", {
         status: 400,
         description: "Incorrect card input",
@@ -143,8 +143,9 @@ module.exports.init = (io) => {
 
   devices.on("device-deactivated", (event) => {
     const message = `Device '${event.device}' deactivated, devices: [${event.devices}]`;
-    console.error(message);
-    createFileJS({...{}, ...{status:"error"}})
+    createFileJS({status:"error", message:'ไม่พบอุปกรณ์สมาร์ทการ์ด'});
+    // console.error(message);
+
     io.emit("smc-error", {
       status: 404,
       description: "Not Found Smartcard Device",
@@ -157,7 +158,8 @@ module.exports.init = (io) => {
   devices.on("error", (error) => {
     const message = `${error.error}`;
     console.error(message);
-    createFileJS({...{}, ...{status:"error"}})
+    // createFileJS({status_error:"error_device", message_error:message});
+
     io.emit("smc-error", {
       status: 404,
       description: "Not Found Smartcard Device",

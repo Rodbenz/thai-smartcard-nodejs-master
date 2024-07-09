@@ -1,3 +1,4 @@
 {
-  "status": "error"
+  "status": "error_device",
+  "message": "ไม่พบอุปกรณ์สมาร์ทการ์ด"
 }
