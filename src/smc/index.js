@@ -92,7 +92,7 @@ module.exports.init = (io) => {
         // console.log("Received data", data);
         if(data){
           const setData = {...data, ...{sex: getSex(data.name.prefix)}}
-          console.log(setData);
+          // console.log(setData);
           createFileJS({...setData, status:"success", message:"ข้อมูลเรียบร้อย"})
         }
         io.emit("smc-data", {
