@@ -22,11 +22,17 @@ app.use((req, res, next) => {
 });
 
 app.use(
+  // cors({
+  //   origin: `${process.env.CORS_ALLOW_ORIGIN}`,
+  //   credentials: true, //access-control-allow-credentials:true
+  //   optionSuccessStatus: 200,
+  // })
   cors({
-    origin: `${process.env.CORS_ALLOW_ORIGIN}`,
+    origin: `*`,
     credentials: true, //access-control-allow-credentials:true
     optionSuccessStatus: 200,
   })
+  // cors()
 );
 
 if (app.env === "production") {
@@ -36,6 +42,9 @@ if (app.env === "production") {
 if (app.env !== "production") {
   app.get("/readSmart", (req, res) => {
     res.sendFile(path.join(publicDir, "example.html"));
+  });
+  app.get("/testFunc", (req, res) => {
+    res.json({name: "testFunc"});
   });
 
   app.get("/readSmartCard", initializeSMC);
