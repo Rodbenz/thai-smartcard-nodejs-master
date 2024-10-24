@@ -1,46 +1,4 @@
 {
-  "cid": "1479900408912",
-  "name": {
-    "prefix": "นาย",
-    "firstname": "นิติ",
-    "middlename": "",
-    "lastname": "ขวาลำธาร",
-    "fullname": "นายนิติ ขวาลำธาร"
-  },
-  "nameEN": {
-    "prefix": "Mr.",
-    "firstname": "Niti",
-    "middlename": "",
-    "lastname": "Khualamthan",
-    "fullname": "Mr.Niti Khualamthan"
-  },
-  "dob": "1999-03-02",
-  "gender": "1",
-  "issuer": "ท้องถิ่นเทศบาลนครสกลนคร/สกลนคร",
-  "issueDate": "2021-08-27",
-  "expireDate": "2030-03-01",
-  "address": {
-    "houseNo": "329/3",
-    "moo": "",
-    "street": "ซอยหนองมันปลา 3 ถนนสกลนคร-กาฬสินธุ์",
-    "subdistrict": "ธาตุเชิงชุม",
-    "district": "เมืองสกลนคร",
-    "province": "สกลนคร",
-    "full": " 329/3 ซอยหนองมันปลา 3 ถนนสกลนคร-กาฬสินธุ์ ตำบลธาตุเชิงชุม อำเภอเมืองสกลนคร จังหวัดสกลนคร"
-  },
-  "photo": "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",
-  "nhso": {
-    "maininscl": "สิทธิหลักประกันสุขภาพแห่งชาติ",
-    "subinscl": "ช่วงอายุ 12-59 ปี",
-    "mainHospitalName": "มหาวิทยาลัยบูรพา",
-    "subHospitalName": "มหาวิทยาลัยบูรพา",
-    "paidType": "1",
-    "issueDate": "2019-05-28",
-    "expireDate": "2059-03-01",
-    "updateDate": "2020-06-22",
-    "changeHospitalAmount": "0"
-  },
-  "sex": "ชาย",
-  "status": "success",
-  "message": "ข้อมูลเรียบร้อย"
+  "status": "error",
+  "message": "ไม่พบอุปกรณ์สมาร์ทการ์ด"
 }
