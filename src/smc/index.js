@@ -143,7 +143,7 @@ module.exports.init = (io) => {
 
   devices.on("device-deactivated", (event) => {
     const message = `Device '${event.device}' deactivated, devices: [${event.devices}]`;
-    createFileJS({status:"error", message:'ไม่พบอุปกรณ์สมาร์ทการ์ด'});
+    createFileJS({status:"error", message:'ไม่พบอุปกรณ์สมาร์ทการ์ด กรุณาเชื่อมต่ออุปกรณ์'});
     // console.error(message);
 
     io.emit("smc-error", {
